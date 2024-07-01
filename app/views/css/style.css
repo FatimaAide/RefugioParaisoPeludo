@@ -1,0 +1,40 @@
+body,html{
+    height: 100%;
+    width: 100%;
+    background-color:#f5f6fa;
+}
+.main-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+}
+.main-container > .login,
+.main-container > .hero-body{
+    height: auto;
+    width: 100%;
+    max-width: 400px;
+    min-width: 300px;
+}
+.container{
+    overflow: hidden;
+    justify-content: center;
+    
+}
+.carousel .item-1, 
+.carousel .item-2, 
+.carousel .item-3, 
+.carousel .item-4 {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carousel img {
+     max-width: 100%;
+     height: auto;
+}
+
+
