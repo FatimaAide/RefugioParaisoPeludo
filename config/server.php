@@ -1,8 +1,8 @@
 <?php
 
     const DB_SERVER = "localhost";
-    const BD_NAME = "pryRefugio";
-    const DB_USER = "pma";
-    const DB_PASSWORD = "1234";
+    const DB_NAME = "pryrefugio";
+    const DB_USER = "root";
+    const DB_PASSWORD ="";
 
 ?>

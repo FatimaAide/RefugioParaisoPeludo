@@ -7,7 +7,7 @@
                 
                 <div class="column">
                     <div class="box">
-                        <h2 class="title has-text-grey-lighter">Rescate y Rehabilitación: </h2>
+                        <h2 class="title has-text-grey-lighter">Actualización: </h2>
                         <form>
                             <div class="field">
                                 <label class="label">Nombre</label>

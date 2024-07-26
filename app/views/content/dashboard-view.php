@@ -7,35 +7,12 @@
     <link rel="stylesheet" href="path/to/bulma.css">
     <script src="path/to/bulma-carousel.min.js"></script>
 </head>
-<body>
-        <div class="container">
-           
-            <div id="carousel-demo" class="carousel">
-                <div class="item-1">
-                    <img src="<?php echo APP_URL; ?>app/views/img/grupo.jpeg" alt="Grupo de animales">
-                </div>
-                <div class="item-2">
-                    <img src="<?php echo APP_URL; ?>app/views/img/donar.jpeg" alt="Donar">
-                </div>
-                <div class="item-3">
-                    <img src="<?php echo APP_URL; ?>app/views/img/imgdog.jpeg" alt="Perro">
-                </div>
-                <div class="item-4">
-                    <img src="<?php echo APP_URL; ?>app/views/img/cutedog.jpeg" alt="Perro lindo">
-                </div>
-            </div>
-         
-            <script>
-                bulmaCarousel.attach('#carousel-demo', {
-                    slidesToScroll: 1,
-                    slidesToShow: 1,
-                    autoplay: true,
-                    autoplaySpeed: 3000 
-                });
-            </script>
-        </div>
-    </section>
 
+<body>
+    
+
+    <?php require_once "./app/views/content/slider-view.php" ?>
+    
     <section class="section">
         <div class="container">
             <h2 class="title is-3-has-text-primary">Bienvenidos a Refugio Peludo</h2>
@@ -75,10 +52,10 @@
             <h2 class="title is-2-has-text-danger">Historias de Éxito</h2>
             <div class="columns">
                 <div class="column">
-                    <p class="has-text-black">"Adoptar a Luna ha sido una de las mejores decisiones de mi vida. Gracias al refugio por su apoyo y dedicación." - María</p>
+                    <p class="has-text-black">"Adoptar a Luna ha sido una de las mejores decisiones de mi vida. Gracias al refugio por su apoyo y dedicación." - María </p>
                 </div>
                 <div class="column">
-                    <p class="has-text-black">"El equipo del refugio nos ayudó a encontrar a nuestro nuevo mejor amigo. ¡Gracias por todo!" - Carlos</p>
+                    <p class="has-text-black">"El equipo del refugio nos ayudó a encontrar a nuestro nuevo mejor amigo. ¡Gracias por todo" - Carlos</p>
                 </div>
             </div>
         </div>
@@ -112,7 +89,7 @@
         </div>
     </section>
 
-    <!-- Sección de Donaciones -->
+
     <section class="section">
         <div class="container">
             <h2 class="title is-2-has-text-black">Haz una Donación</h2>

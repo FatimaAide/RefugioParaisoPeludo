@@ -1,3 +1,14 @@
+<?php
+    require_once "./app/views/inc/head.php";
+    require_once "./config/server.php";
+
+    use app\controllers\misionController;
+
+    $misionController = new misionController();
+    $mision= $misionController->misionDatos();
+    
+?>
+
 <body>
     <section class="hero is-primary">
         <div class="hero-body">
@@ -6,6 +17,7 @@
                 <h2 class="subtitle">Ayúdanos a cuidar a los animales necesitados</h2>
             </div>
         </div>
+
     </section>
 
     <section class="section">
@@ -17,22 +29,17 @@
                         <figure class="image">
                             <img src="<?php echo APP_URL; ?>app/views/img/foto5.webp" alt="Nuestra Historia">
                         </figure>
+                        <div>
+                        <?php foreach ($mision as $datos): { ?>
+                                <h1 class="title has-text-primary">Mision</h1>
+                                <p><?php echo $datos['mision']?></p>
+                                <h1 class="title has-text-primary">Visión</h1>
+                                <p><?php echo $datos['vision']?></p>
+                                <?php } endforeach; ?>
+                        </div>
                     </div>
                     <div class="column">
                         <p class="has-text-black-bis">En Paraíso Peludo, nuestra misión es proporcionar un refugio seguro y amoroso para animales abandonados y maltratados, ofreciéndoles una segunda oportunidad para encontrar un hogar permanente y amoroso. Fundado en 2010, nuestro refugio ha crecido hasta convertirse en un referente en el cuidado y rehabilitación de animales en nuestra comunidad.</p>
-                    </div>
-                </div>
-
-                <h2 class="title has-text-primary">Nuestra Misión</h2>
-                <div class="columns">
-                   
-                    <div class="column">
-                        <p class="has-text-black-bis">Nuestra misión es rescatar, rehabilitar y reubicar animales en necesidad, promoviendo la adopción responsable y educando a la comunidad sobre el bienestar animal. Creemos que cada animal merece una vida digna y trabajamos incansablemente para hacer realidad esta visión.</p>
-                    </div>
-                    <div class="column is-one-third">
-                        <figure class="image">
-                            <img src="<?php echo APP_URL; ?>app/views/img/foto6.jpeg" alt="Únete a Nosotros">
-                        </figure>
                     </div>
                 </div>
 
